@@ -22,7 +22,7 @@ export async function GET(
         headers: {
           Authorization: `Bearer ${apiKey}`,
         },
-        next: { revalidate: 60 },
+        cache: "no-store",
       },
     );
 
