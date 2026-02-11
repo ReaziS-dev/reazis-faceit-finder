@@ -3,7 +3,7 @@ import { FaceitPlayer } from "@/app/types/faceit";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { player_id: string } },
+  { params }: { params: Promise<{ player_id: string }> },
 ) {
   const { player_id } = await params;
   const apiKey = process.env.FACEIT_API_KEY;

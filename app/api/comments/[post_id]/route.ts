@@ -3,7 +3,7 @@ import { FaceitPlayer } from "@/app/types/faceit";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { post_id: string } },
+  { params }: { params: Promise<{ post_id: string }> },
 ) {
   const { post_id } = await params;
   console.log("Fetching comments for post_id:", post_id);
