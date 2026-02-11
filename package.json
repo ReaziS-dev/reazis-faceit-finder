@@ -23,6 +23,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "react-intersection-observer": "^10.0.2",
+    "sass": "^1.97.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
