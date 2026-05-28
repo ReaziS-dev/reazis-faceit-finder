@@ -1,0 +1,29 @@
+.to-do-list {
+    align-self: center;
+
+    .to-do {
+        list-style-type: none;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .prev,
+    .next {
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f0f0f0;
+        user-select: none;
+        &:hover {
+            background-color: #e0e0e0;
+        }
+
+    }
+}

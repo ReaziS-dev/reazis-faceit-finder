@@ -5,10 +5,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
-        {children}
-        <div id="portal"></div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
